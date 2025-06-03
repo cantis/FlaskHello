@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World Flask App</title>
+</head>
+
+<body>
+    <h1>Hello, World!</h1>
+    <form method="post">
+        <input type="text" name="value" placeholder="Enter test value" required>
+        <button type="submit">Save</button>
+    </form>
+    <h2>Saved Values</h2>
+    <ul>
+        {% for item in values %}
+        <li>{{ item.value }}</li>
+        {% else %}
+        <li>No values saved yet.</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
