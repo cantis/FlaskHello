@@ -3,14 +3,17 @@ name = "flaskhello"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
+license = { file = "LICENSE.md" }
 requires-python = ">=3.11"
 dependencies = [
     "flask>=3.1.1",
     "flask-sqlalchemy>=3.1.1",
+    "python-dotenv>=1.1.0",
     "sqlalchemy>=2.0.41",
 ]
 
 [dependency-groups]
 dev = [
     "pytest>=8.4.0",
+    "ruff>=0.12.0",
 ]
